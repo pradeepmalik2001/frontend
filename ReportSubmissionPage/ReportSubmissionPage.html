@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="/ReportSubmissionPage/ReportSubmissionPage.css"
+    />
+  </head>
+  <body>
+    <h1>
+      <strong> Report Submission Page </strong>
+    </h1>
+
+    <form action="timeTrackerForm" class="main">
+      <fieldset>
+        <legend class="legend">Form</legend>
+        <div class="container">
+          <div class="row">
+            <br />
+            <div class="projectName">
+              <label for="projectName">Project Name : </label>
+              <br />
+              <input
+                type="text"
+                id="projectName"
+                placeholder="Enter Project Name"
+                required
+              />
+            </div>
+            <br />
+            <div class="date">
+              <label for="date">Date : </label>
+              <br />
+              <input
+                type="date"
+                id="date"
+                placeholder="Enter Today's Date"
+                required
+              />
+            </div>
+            <br />
+            <div class="hoursWorked">
+              <label for="hoursWorked">Worked Hour : </label>
+              <br />
+              <input
+                type="text"
+                id="hoursWorked"
+                placeholder="Enter Worked Hour"
+                required
+              />
+            </div>
+            <br />
+            <div class="comments">
+              <label for="comments">Comments : </label>
+              <br />
+              <textarea
+                name="textarea"
+                id="comments"
+                placeholder="Write Comments Here"
+                required
+              ></textarea>
+            </div>
+            <br />
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </div>
+        <br />
+      </fieldset>
+    </form>
+  </body>
+  <script src="ReportSubmissionPage.js"></script>
+</html>
